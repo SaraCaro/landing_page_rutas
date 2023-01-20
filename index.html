@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/54411caa33.js" crossorigin="anonymous"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <i class="fa-solid fa-location-dot"></i>              
+              <strong>tusRutas</strong>
+            </a>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <a class="navbar-brand" href="#">Sobre Nosotros</a>
+                <a class="navbar-brand" href="#rutas">Rutas</a>
+                <a class="navbar-brand" href="#contacta">Contacto</a>
+              </div>
+            </nav>
+        </div>
+      </header>
+      
+      <main>
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div id="prueba" class="col-lg-7 mx-auto rounded">
+              <h1 class="fw-light">Rutas por España</h1>
+              <p class="lead">Aquí podrás encontrar varias rutas dentro de España para disfrutarlas durante días.
+              </p>
+              <p>También podrás apuntarte a ellas y compartir tus experiencias con otros usuarios.</p>
+            </div>
+            <p>
+              <a id="iniciarSesion" href="#" class="btn btn-primary my-2">Iniciar Sesión</a>
+              
+              <!-- <a id="registrarse" href="#" class="btn btn-secondary my-2" data-bs-toggle="modal" data-bs-target="#registro">Registrarse</a> -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registro">
+                Registrarse
+              </button>
+              <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark fw-bold" id="exampleModalLabel">Registrate</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      <form action="">
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label fw-bold">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                          <label for="apellidos" class="form-label fw-bold">Apellidos</label>
+                          <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label fw-bold">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label fw-bold">Contraseña</label>
+                          <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password2" class="form-label fw-bold">Repite la contraseña</label>
+                          <input type="password" class="form-control" id="password2" placeholder="Repetir contraseña">
+                        </div>
+                        <div class="mb-3">
+                          <input type="submit" class="form-control bg-dark text-light" id="enviar">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </section>
+
+        <!-- Cards -->
+      
+        <div class="py-5" id="rutas">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow">
+                    <img src="./img/paisVasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ruta por el Pais Vasco</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVasco">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="modalVasco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Ruta Pais Vasco</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Aquí tienes algunas ideas para hacer una ruta por el País Vasco en 4 y 7 días, visitando los lugares más espectaculares y con más encanto.</p>
+                                <ul>
+                                  <li>DÍA 1 y 2: Bilbao</li>
+                                    <p>Reservar un free tour o visita guiada. Siempre nos ayuda a conocer mejor todo lo que vamos a ver, y también a situarnos.</p>
+                                  <li>DÍA 3: Ruta senderismo por acantilados de la costa de Vizcaya</li>
+                                    <p>Si te gusta el senderismo, te recomendamos hacer un sendero costero de unos 13 kilómetros que va desde Arrigunaga hasta Cala Barrika</p>
+                                  <li>DÍA 4: San Juan de Gaztelugatxe y Reserva de la Biosfera de Urdabai</li>
+                                    <p>El lugar que se ha hecho super famoso desde que se convirtió también en otro escenario de Juego de Tronos. </p>
+                                  <li>DÍA 5: San Sebastián</li>
+                                    <p>Es una ciudad que tiene mucho que ofrecer, y que es muy agradable para pasear.</p>
+                                  <li>DÍA 6: San Juan y San Pedro, Hondarribia, Mirador del Monte Jaizkibel</li>
+                                  <li>DÍA 7: Vitoria</li>
+                                    <p>El interior y exterior de las antiguas murallas que protegían la ciudad, paseando por su casco medieval y tomar unos pintxos en la Calle Cuchillería</p>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow">
+                    <img src="./img/mediterranea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ruta por la Costa Mediterránea</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMediterraneo">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="modalMediterraneo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Costa Mediterránea</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Si vas a hacer una ruta por la Costa Mediterránea de España de 15 días, te ayudamos a diseñar el itinerario incluyendo lugares espectaculares y con mucho encanto.</p>
+                                <ul>
+                                  <li>DÍAS 1, 2, 3: Barcelona</li>
+                                  <li>DÍA 4: Castelldefels</li>
+                                    <p>Con una playa kilométrica que se puede disfrutar casi todo el año (hablan de 300 días de sol) y unos atardeceres únicos</p>
+                                  <li>DÍAS 5 y 6: Tarragona</li>
+                                    <p>Una ciudad llena de historia y Patrimonio de la Humanidad.</p>
+                                  <li>DÍAS 7, 8, 9 y 10: Valencia y la Albufera</li>
+                                    <p>Una ciudad con mucho encanto y una de las mejores playas de España.</p>
+                                  <li>DÍA 11: Játiva o Xátiva</li>
+                                    <p>Incluimos la parada en Xátiva para hacer la visita a su impresionante castillo</p>
+                                  <li>DÍA 12, 13 y 14: Alicante</li>
+                                    <p>Muy buen tiempo mediterráneo</p>
+                                  <li>DÍA 15: Elche</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="./img/castillo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body shadow">
+                      <h5 class="card-title">Ruta de castillos medievales</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#castillos">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="castillos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Castillos Medievales</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Te damos unas cuantas ideas de rutas muy chulas donde ver castillos medievales en España. Vas a comprobar que tienes mucho donde elegir.</p>
+                                <ul>
+                                  <li>Castillo de Curiel(Situado en Valladolid)</li>
+                                    <p>De este fácilmente podrás llegar al siguiente</p>
+                                  <li>Castillo Encantado de Trigueros del Valle</li>
+                                    <p>Hoy es refugio de seres mágicos, y lo mejor es que puedes pasear tranquilamente entre ellos</p>
+                                  <li>Castillo de Fuensaldaña</li>
+                                    <p>Durante años fue sede de las Cortes de Castilla y León, pero hoy está abierto a las visitas turísticas</p>
+                                  <li>Alcázar de Segovia</li>
+                                    <p>Es uno de los monumentos más emblemáticos de la ciudad de Segovia</p>
+                                  <li>Castillo de Ampudia(Situado en Palencia)</li>
+                                  <li>Santa Catalina</li>
+                                    <p>Uno de los lugares imprescindibles que visitar en Jaén.</p>
+                                  <li>Castillo de Alcaudete</li>
+                                    <p>Uno de los castillos mejor conservados de España.</p>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card">
+                    <img src="./img/costaBrava.jpg" class="card-img-top" alt="...">
+                    <div class="card-body shadow">
+                      <h5 class="card-title">Ruta por la Costa Brava</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#brava">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="brava" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Costa Brava (Cataluña)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Encontrarás pueblos medievales preciosos, calas y playas espectaculares donde darte un chapuzón y una gastronomía de escándalo</p>
+                                <ul>
+                                  <li>DÍA 1 y 2: La ciudad de Girona</li>
+                                    <p>Su Barrio Viejo es espectacular, creerás que te encuentras paseando por la misma Edad Media.</p>
+                                  <li>DÍA 3: Palamós, Tamariu y Peratallada</li>
+                                    <p>En esta ruta por la Costa Brava no puedes dejar de visitar estos tres pueblos.</p>
+                                  <li>DÍA 4: Begur y Pals</li>
+                                  <li>DÍA 5: Figueres</li>
+                                    <p>En Figueres encontrarás el Museo Dalí, uno de los museos más visitados de España.</p>
+                                  <li>DÍA 6: Cadaqués</li>
+                                    <p> podrás pasear su casco antiguo de calles estrechas y empinadas</p>
+                                  <li>DÍA 7: Cabo de Creus</li>
+                                    <p>Es el punto más oriental de la península ibérica y uno de los lugares más espectaculares de la Costa Brava.</p>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="./img/canarias.jpg" class="card-img-top" alt="...">
+                    <div class="card-body shadow">
+                      <h5 class="card-title">Ruta por Canarias</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canarias">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="canarias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Ruta Canarias</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Visitala por 7 o 10 dias y tendrás unas vacaciones inolvidables con un clima privilegiado y patrimonio natural</p>
+                                <ul>
+                                  <li>DÍA 1: Masca - Garachico - Icod de los Vinos (Tenerife)</li>
+                                    <p>Empezamos con uno de los roadtrips panorámicos más impresionantes.</p>
+                                  <li>DÍA 2: Parque Nacional del Teide (Tenerife)</li>
+                                    <p>La tercera estructura volcánica más grande del planeta.
+                                      te recomendamos como imprescindible es subir en el teleférico hasta la estación de la Rambleta
+                                    </p>
+                                  <li>DÍA 3: San Cristóbal de La Laguna y Santa Cruz (Tenerife)</li>
+                                    <p>La Laguna es una ciudad universitaria con un casco histórico precioso y Santa Cruz es la capital de la isla.</p>
+                                  <li>DÍA 4: Parque Rural Anaga (Tenerife)</li>
+                                  <li>DÍA 5: Acantilado de los Gigantes y La Orotava (Tenerife)</li>
+                                  <li>DÍA 6: Teror - Monumento Montañón Negro - Artenara (Gran Canaria)</li>
+                                  <li>DÍA 7: Barranco de las Vacas - Dunas de Maspalomas - Playa de las Meloneras (Gran Canaria)</li>
+                                    <p>Te esperan paisajes que te van a recordar a países lejanos</p>
+                                  <li>DÍA 8: Tejeda - Cruz de Tejeda - Pico de las Nieves (Gran Canaria)</li>
+                                  <li>DÍA 9: Arucas - fábrica de Arehucas - Las Palmas (Gran Canaria)</li>
+                                  <li>DÍA 10: Agaete - Parque Natural Tamadaba - Azulejos de Veneguera - Puerto Mogán (Gran Canaria)</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="./img/andalucia.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body shadow">
+                      <h5 class="card-title">Ruta por Andalucía</h5>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Más información
+                      </button>
+                      <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Ruta Andalucía</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Aquí tienes paradas geniales para viajar por el Sur de España y descubrir Andalucía en unos 7 a 12 dias</p>
+                                <ul>
+                                  <li>DÍAS 1, 2 y 3: Sevilla</li>
+                                    <p>Todo el mundo habla de que es preciosa. Tiene el casco histórico más grande de España y uno de los más bonitos. Además su catedral es la tercera más grande del mundo.</p>
+                                  <li>DÍAS 4 y 5: Córdoba</li>
+                                    <p>Su mezquita es una de las más grandes del mundo y su casco histórico es precioso.</p>
+                                  <li>DÍAS 6 y 7: Granada</li>
+                                    <p>La Alhambra es una de las maravillas del mundo y su casco histórico es precioso. Además, está muy cerca de Sierra Nevada, donde podrás esquiar en invierno.</p>
+                                  <li>DÍA 8: Nerja y Frigiliana, Málaga</li>
+                                  <li>DÍA 9: Málaga</li>
+                                    <p>Está muy cerca de la Costa del Sol, donde podrás disfrutar de sus playas y tiene un centro histórico sorprendente</p>
+                                  <li>DÍA 10: Ronda, Málaga</li>
+                                    <p>Un típico pueblo andaluz de callejuelas estrechas, con fachadas encaladas y lo más espectacular</p>
+                                  <li>DÍAS 11 Y 12: Jerez de la Frontera, Cádiz</li>
+                                    <p>A Jerez de la Frontera se le conoce por ser tierra de vino, flamenco y caballos.</p>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apuntarme</button>                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="text-center" id="contacta">Contacta con nosotros</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <form>
+                      <div id="formulario" class="mb-3 col-7 col-md-5">
+                        <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie</div>
+                        <textarea name="sugerencias" id="sugerencias">Sugerencias</textarea>
+                        <input type="submit" class="form-control bg-dark text-light" id="enviar">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+      </main>
+      
+      <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span>&copy; tusRutas</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="ms-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="ms-3"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </footer>
+        <p id="back-top" class="text-end">
+          <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </p>
+      </div>
+
+    <!-- <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+</html>

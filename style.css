@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+
+:root{
+    --primary-color: #434959;
+    --secondary-color: #733E32;
+    --terciary-color: white;
+    --cuaternary-color: #73A2BF;
+    --quinary-color: black;
+    --footer-color: gray;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header */
+
+header{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+}
+
+header strong:hover{
+    color: var(--quinary-color);
+}
+
+header i:hover{
+    color: var(--quinary-color);
+}
+
+.navbar-brand{
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 7px;
+    color: var(--terciary-color);
+}
+
+.container-fluid a:hover{
+    background-color: gray;
+    transition: 0.5s;
+    padding: 10px;
+    opacity: 0.9;
+    border-radius: 7px;
+    color: var(--terciary-color);
+}
+
+/* section inicio */
+
+section.py-5{
+    background-image: url(./img/carretera.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    color: var(--terciary-color);
+}
+
+section h1{
+    font-family: 'IBM Plex Serif', serif;
+
+}
+
+#prueba{
+    background-color: rgba(30,25,25,0.6);
+}
+
+.lead{
+    font-size: 1.1em;
+}
+
+#iniciarSesion{
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    transition: 0.3s;
+}
+
+#iniciarSesion:hover{
+    background-color: var(--terciary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transition: 0.3s;
+}
+
+#registrarse{
+    background-color: var(--cuaternary-color);
+    color: var(--terciary-color);
+}
+
+#registrarse:hover{
+    background-color: var(--terciary-color);
+    color: var(--cuaternary-color);
+    border: 1px solid var(--cuaternary-color);
+}
+
+/* cards */
+#exampleModalLabel{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.btn-primary{
+    background-color: var(--cuaternary-color);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--terciary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+
+.btn-primary:focus{
+    background-color: var(--terciary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.btn-primary:visited{
+    background-color: var(--terciary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* contacta */
+
+#sugerencias{
+    width: 100%;
+}
+
+#formulario{
+    margin: 0 auto;
+}
+
+input[type="submit"]{
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--terciary-color) !important;
+    color: var(--quinary-color) !important;
+    transition: 0.3s;
+}
+
+
+/* footer */
+
+footer{
+    color: var(--footer-color);
+}
+
+footer i{
+    scale: 1.5;
+    color: var(--footer-color);
+}
+
+footer i:hover{
+    color: var(--primary-color);
+}
+
+#back-top a i{
+    scale: 2.5;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+#back-top a i:hover{
+    color: var(--secondary-color);
+    transition: 0.3s;
+    scale: 3;
+}
